@@ -1,5 +1,5 @@
 function [time_min_rec sum_day app_day timezones] = getusageperh(Data,Timestamp_start, hoursbin)
-% Usage [time_min_rec median_day] = getspeedperh(Data,Timestamp_start, hoursbin)
+% Usage [time_min_rec sum_day app_day timezones] = getusageperh(Data,Timestamp_start, hoursbin)
 % Input: 
 % Data -> Data in QA data extract format
 % Timestamp_start -> The timestamp from which to begin computing the stat (all inputs floored to hh:00),
@@ -7,6 +7,7 @@ function [time_min_rec sum_day app_day timezones] = getusageperh(Data,Timestamp_
 % Output: 
 % time_min_rec -> The lower edge of the time bin in UTC milliseconds 
 % sum_day -> The number of touches in a given bin  
+% app_day -> The number of unique apps used in a given bin 
 % timezones -> The timezones and their corresponding UTC milliseconds
 % values 
 %
